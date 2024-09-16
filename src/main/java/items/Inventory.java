@@ -122,6 +122,7 @@ public class Inventory
      *
      * @return matching stack if one was found and `null` otherwise
      */
+    @SuppressWarnings("unchecked")
     public ItemStack findMatchingItemStack(ItemStack key)
     {
         // Add the necessary sequential search loop
@@ -194,6 +195,7 @@ public class Inventory
     /**
      * *Print* a Summary of the Inventory and all Items contained within.
      */
+    @SuppressWarnings("unchecked")
     @Override
     public String toString()
     {
