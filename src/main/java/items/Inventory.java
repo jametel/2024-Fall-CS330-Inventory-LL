@@ -142,6 +142,7 @@ public class Inventory
      *
      * @param toAdd data that we want to store in a Node and add to the list
      */
+    @SuppressWarnings("unchecked")
     public void addItemStackNoCheck(ItemStack toAdd)
     {
         LinkedList.Node<ItemStack> newNode = new LinkedList.Node<>(toAdd);
